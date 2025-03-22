@@ -3,3 +3,4 @@ data/
 *.png
 *.bak
 .DS_Store
+**/.DS_Store
