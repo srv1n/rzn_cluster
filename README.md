@@ -18,14 +18,14 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rzn_cluster = "0.1.0"
+rzn_cluster = { path = "https://github.com/srv1n/rzn_cluster" }
 ```
 
 For macOS acceleration:
 
 ```toml
 [dependencies]
-rzn_cluster = { version = "0.1.0", features = ["macos-accelerate"] }
+rzn_cluster = { path = "https://github.com/srv1n/rzn_cluster", features = ["macos-accelerate"] }
 ```
 
 ## 🚀 Example Usage
@@ -161,17 +161,6 @@ cargo run --example lancedb_demo
 ```
 
 Each example generates a visualization of the clustering results, allowing you to see how different algorithms perform on the same data.
-
-## 🧩 Design Philosophy
-
-RZN Cluster is designed to be:
-
-- **Simple**: Easy to use with minimal configuration
-- **Flexible**: Works with different data types and formats
-- **Lightweight**: Core functionality has minimal dependencies
-- **Educational**: Clear implementations that help users understand the algorithms
-
-The library deliberately focuses on core dimensionality reduction and clustering functionality, making it ideal for both learning and production use.
 
 ## 🛠️ Features
 
